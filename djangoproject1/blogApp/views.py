@@ -12,7 +12,7 @@ def index(requests):
 
 
 def detail(requests, pk):
-    samples = Sample.objects.get(pk=pk)
+    samples = Sample.objects.get(slug=pk)
     context = {
         'sample':samples
     }
